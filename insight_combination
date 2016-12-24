@@ -1,0 +1,26 @@
+require 'green_shoes'
+
+insights = []
+patterns = []
+
+
+Shoe.app(title: "Insight Combination", width: 600, height: 400) do
+  stack margin 10 do
+    para "Add Insight"
+    flow(margin: 10) do
+      while 1
+        @insight = edit_box(width: 400, height: 400)
+        @b1 = button("Add Insight")
+        @b1.click = insights.push(@insight)
+        @b2 = button("Done Adding Insights")
+        break
+        @b2.click
+      end
+
+
+
+    end
+    loop
+
+  end
+end
