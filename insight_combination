@@ -8,13 +8,19 @@ Shoe.app(title: "Insight Combination", width: 600, height: 400) do
   stack margin 10 do
     para "Add Insight"
     flow(margin: 10) do
-      while 1
+
+      while @b2.click == false
         @insight = edit_box(width: 400, height: 400)
         @b1 = button("Add Insight")
         @b1.click = insights.push(@insight)
         @b2 = button("Done Adding Insights")
-        break
-        @b2.click
+      end
+
+      while @b2.click == true || @b4.click == false
+        @patterm = edit_box(width: 400, height:400)
+        @b3 = button("Add Pattern")
+        @b3.click = patterns.push(@pattern)
+        @b4 = button("Done Adding Patterns")
       end
 
 
