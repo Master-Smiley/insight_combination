@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @insight.user_id %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @insight.text %>
+</p>
+
+<%= link_to 'Edit', edit_insight_path(@insight) %> |
+<%= link_to 'Back', insights_path %>
