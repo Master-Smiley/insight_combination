@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  insight_id: 1
+  pattern_id: 1
+  text: MyString
+  user_id: 1
+
+two:
+  insight_id: 1
+  pattern_id: 1
+  text: MyString
+  user_id: 1
